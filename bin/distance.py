@@ -1,7 +1,8 @@
-"""Functions to convert units of distance"""
+"""Functions to convert units of distance."""
+
 
 def convert_meters_to_kilometers(meters):
-    """Converts meters to kilometers
+    """Convert meters to kilometers.
 
     Args:
         meters (float): Distance in meters
@@ -11,8 +12,9 @@ def convert_meters_to_kilometers(meters):
     """
     return meters / 1000
 
+
 def convert_meters_to_miles(meters):
-    """Converts meters to miles
+    """Convert meters to miles.
 
     Args:
         meters (float): Distance in meters
@@ -22,8 +24,9 @@ def convert_meters_to_miles(meters):
     """
     return meters * 0.000621371
 
+
 def convert_kilometers_to_meters(kilometers):
-    """Converts kilometers to meters
+    """Convert kilometers to meters.
 
     Args:
         kilometers (float): Distance in kilometers
@@ -33,8 +36,9 @@ def convert_kilometers_to_meters(kilometers):
     """
     return kilometers * 1000
 
+
 def convert_kilometers_to_miles(kilometers):
-    """Converts kilometers to miles
+    """Convert kilometers to miles.
 
     Args:
         kilometers (float): Distance in kilometers
@@ -44,8 +48,9 @@ def convert_kilometers_to_miles(kilometers):
     """
     return kilometers * 0.621371
 
+
 def convert_miles_to_meters(miles):
-    """Converts miles to meters
+    """Convert miles to meters.
 
     Args:
         miles (float): Distance in miles
@@ -55,8 +60,9 @@ def convert_miles_to_meters(miles):
     """
     return miles * 1609.34
 
+
 def convert_miles_to_kilometers(miles):
-    """Converts miles to kilometers
+    """Convert miles to kilometers.
 
     Args:
         miles (float): Distance in miles
@@ -68,7 +74,7 @@ def convert_miles_to_kilometers(miles):
 
 
 def convert_inches_to_meters(inches):
-    """Converts inches to meters
+    """Convert inches to meters.
 
     Args:
         inches (float): Distance in inches
@@ -78,8 +84,9 @@ def convert_inches_to_meters(inches):
     """
     return inches * 0.0254
 
+
 def convert_inches_to_kilometers(inches):
-    """Converts inches to kilometers
+    """Convert inches to kilometers.
 
     Args:
         inches (float): Distance in inches
@@ -89,8 +96,9 @@ def convert_inches_to_kilometers(inches):
     """
     return inches * 0.0000254
 
+
 def convert_inches_to_miles(inches):
-    """Converts inches to miles
+    """Convert inches to miles.
 
     Args:
         inches (float): Distance in inches
@@ -100,8 +108,9 @@ def convert_inches_to_miles(inches):
     """
     return inches * 0.000015783
 
+
 def convert_meters(meters, target):
-    """Converts meters to target unit
+    """Convert meters to target unit.
 
     Args:
         meters (float): Distance in meters
@@ -110,17 +119,18 @@ def convert_meters(meters, target):
     Returns:
         float: Distance in target unit
     """
-    if target == 'Kilometers':
+    if target == "Kilometers":
         return convert_meters_to_kilometers(meters)
-    elif target == 'Miles':
+    if target == "Miles":
         return convert_meters_to_miles(meters)
-    elif target == 'Inches':
+    if target == "Inches":
         return meters * 39.3701
 
     return meters
 
+
 def convert_kilometers(kilometers, target):
-    """Converts kilometers to target unit
+    """Convert kilometers to target unit.
 
     Args:
         kilometers (float): Distance in kilometers
@@ -129,17 +139,18 @@ def convert_kilometers(kilometers, target):
     Returns:
         float: Distance in target unit
     """
-    if target == 'Meters':
+    if target == "Meters":
         return convert_kilometers_to_meters(kilometers)
-    elif target == 'Miles':
+    if target == "Miles":
         return convert_kilometers_to_miles(kilometers)
-    elif target == 'Inches':
+    if target == "Inches":
         return kilometers * 39370.1
 
     return kilometers
 
+
 def convert_miles(miles, target):
-    """Converts miles to target unit
+    """Convert miles to target unit.
 
     Args:
         miles (float): Distance in miles
@@ -148,17 +159,18 @@ def convert_miles(miles, target):
     Returns:
         float: Distance in target unit
     """
-    if target == 'Meters':
+    if target == "Meters":
         return convert_miles_to_meters(miles)
-    elif target == 'Kilometers':
+    if target == "Kilometers":
         return convert_miles_to_kilometers(miles)
-    elif target == 'Inches':
+    if target == "Inches":
         return miles * 63360
 
     return miles
 
+
 def convert_inches(inches, target):
-    """Converts inches to target unit
+    """Convert inches to target unit.
 
     Args:
         inches (float): Distance in inches
@@ -167,11 +179,11 @@ def convert_inches(inches, target):
     Returns:
         float: Distance in target unit
     """
-    if target == 'Meters':
+    if target == "Meters":
         return convert_inches_to_meters(inches)
-    elif target == 'Kilometers':
+    if target == "Kilometers":
         return convert_inches_to_kilometers(inches)
-    elif target == 'Miles':
+    if target == "Miles":
         return convert_inches_to_miles(inches)
 
     return inches
