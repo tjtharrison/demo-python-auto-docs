@@ -60,7 +60,8 @@ def get_units():
                         choices=[
                             'Meters',
                             'Kilometers',
-                            'Miles'
+                            'Miles',
+                            'Inches'
                         ]
                     ),
                     inquirer.List(
@@ -69,7 +70,8 @@ def get_units():
                         choices=[
                             'Meters',
                             'Kilometers',
-                            'Miles'
+                            'Miles',
+                            'Inches'
                         ]
                     ),
                 ]
@@ -157,6 +159,8 @@ def main():
             result = distance.convert_kilometers(values, units["source_target"]["target"])
         elif units["source_target"]["source"] == "Miles":
             result = distance.convert_miles(values, units["source_target"]["target"])
+        elif units["source_target"]["source"] == "Inches":
+            result = distance.convert_inches(values, units["source_target"]["target"])
         elif units["source_target"]["source"] == "Grams":
             result = weight.convert_grams(values, units["source_target"]["target"])
         elif units["source_target"]["source"] == "Kilograms":
