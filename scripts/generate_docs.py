@@ -2,6 +2,7 @@
 """Generate mkgendocs.yaml from python files by iterating over files and functions."""
 
 import os
+
 import yaml
 
 
@@ -18,11 +19,11 @@ def get_mkgendocs_config():
 
     """
     try:
-        with open("mkgendocs.yaml") as mkgendocs_config:
+        with open("mkgendocs.yaml", encoding="UTF-8") as mkgendocs_config:
             return yaml.safe_load(mkgendocs_config)
-    except FileNotFoundError:
+    except FileNotFoundError as error_message:
         print("mkgendocs.yaml not found")
-        raise FileNotFoundError
+        raise FileNotFoundError from error_message
     except yaml.YAMLError as error_message:
         raise yaml.YAMLError() from error_message
 
@@ -61,7 +62,7 @@ def get_file_functions(filename):
         List of functions
 
     """
-    with open(filename) as file:
+    with open(filename, encoding="UTF-8") as file:
         lines = file.readlines()
     functions = []
     for line in lines:
@@ -94,7 +95,7 @@ def main():
 
     mkgendocs_config["pages"] = new_pages
 
-    with open("mkgendocs.yaml", "w") as mkgendocs_config_file:
+    with open("mkgendocs.yaml", "w", encoding="UTF-8") as mkgendocs_config_file:
         yaml.dump(mkgendocs_config, mkgendocs_config_file)
 
 

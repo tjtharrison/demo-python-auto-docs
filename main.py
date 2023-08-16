@@ -1,9 +1,11 @@
 """Small python project to use for converting various units of measurement."""
 
-import inquirer
 import sys
 
-from bin import temperature, distance, weight
+import inquirer
+
+from bin import distance, temperature, weight
+
 
 # Ask user for input
 def get_units():
@@ -19,91 +21,62 @@ def get_units():
     try:
         unit_type = [
             inquirer.List(
-                'unit',
-                message='What unit would you like to convert?',
-                choices=[
-                    'Temperature',
-                    'Distance',
-                    'Weight'
-                ]
-        )]
+                "unit",
+                message="What unit would you like to convert?",
+                choices=["Temperature", "Distance", "Weight"],
+            )
+        ]
 
         unit_type = inquirer.prompt(unit_type)["unit"]
 
         while True:
-            if unit_type == 'Temperature':
+            if unit_type == "Temperature":
                 source_target = [
                     inquirer.List(
-                        'source',
-                        message='What unit would you like to convert from?',
-                        choices=[
-                            'Celsius',
-                            'Fahrenheit',
-                            'Kelvin'
-                        ]
+                        "source",
+                        message="What unit would you like to convert from?",
+                        choices=["Celsius", "Fahrenheit", "Kelvin"],
                     ),
                     inquirer.List(
-                        'target',
-                        message='What unit would you like to convert to?',
-                        choices=[
-                            'Celsius',
-                            'Fahrenheit',
-                            'Kelvin'
-                        ]
-                    )
-                ]
-            elif unit_type == 'Distance':
-                source_target = [
-                    inquirer.List(
-                        'source',
-                        message='What unit would you like to convert from?',
-                        choices=[
-                            'Meters',
-                            'Kilometers',
-                            'Miles',
-                            'Inches'
-                        ]
-                    ),
-                    inquirer.List(
-                        'target',
-                        message='What unit would you like to convert to?',
-                        choices=[
-                            'Meters',
-                            'Kilometers',
-                            'Miles',
-                            'Inches'
-                        ]
+                        "target",
+                        message="What unit would you like to convert to?",
+                        choices=["Celsius", "Fahrenheit", "Kelvin"],
                     ),
                 ]
-            elif unit_type == 'Weight':
+            elif unit_type == "Distance":
                 source_target = [
                     inquirer.List(
-                        'source',
-                        message='What unit would you like to convert from?',
-                        choices=[
-                            'Grams',
-                            'Kilograms',
-                            'Pounds'
-                        ]
+                        "source",
+                        message="What unit would you like to convert from?",
+                        choices=["Meters", "Kilometers", "Miles", "Inches"],
                     ),
                     inquirer.List(
-                        'target',
-                        message='What unit would you like to convert to?',
-                        choices=[
-                            'Grams',
-                            'Kilograms',
-                            'Pounds'
-                        ]
-                    )
+                        "target",
+                        message="What unit would you like to convert to?",
+                        choices=["Meters", "Kilometers", "Miles", "Inches"],
+                    ),
+                ]
+            elif unit_type == "Weight":
+                source_target = [
+                    inquirer.List(
+                        "source",
+                        message="What unit would you like to convert from?",
+                        choices=["Grams", "Kilograms", "Pounds"],
+                    ),
+                    inquirer.List(
+                        "target",
+                        message="What unit would you like to convert to?",
+                        choices=["Grams", "Kilograms", "Pounds"],
+                    ),
                 ]
 
             source_target = inquirer.prompt(source_target)
 
             if source_target["source"] != source_target["target"]:
                 break
-            else:
-                print('** Please choose different units to convert from and to.**')
-                print("")
+
+            print("** Please choose different units to convert from and to.**")
+            print("")
 
         response = {"unit_type": unit_type, "source_target": source_target}
 
@@ -123,9 +96,8 @@ def get_value():
         int: Value to convert.
     """
     try:
-
         while True:
-            source_value = input('Enter value to convert: ')
+            source_value = input("Enter value to convert: ")
 
             if source_value.isdigit():
                 source_value = int(source_value)
@@ -135,8 +107,9 @@ def get_value():
     except KeyboardInterrupt as error_message:
         raise KeyboardInterrupt from error_message
 
+
 def main():
-    """Main function for the program."""
+    """Launch the program."""
     try:
         units = get_units()
 
@@ -148,15 +121,23 @@ def main():
         print("Target: " + units["source_target"]["target"])
 
         if units["source_target"]["source"] == "Celsius":
-            result = temperature.convert_celsius(values, units["source_target"]["target"])
+            result = temperature.convert_celsius(
+                values, units["source_target"]["target"]
+            )
         elif units["source_target"]["source"] == "Fahrenheit":
-            result = temperature.convert_fahrenheit(values, units["source_target"]["target"])
+            result = temperature.convert_fahrenheit(
+                values, units["source_target"]["target"]
+            )
         elif units["source_target"]["source"] == "Kelvin":
-            result = temperature.convert_kelvin(values, units["source_target"]["target"])
+            result = temperature.convert_kelvin(
+                values, units["source_target"]["target"]
+            )
         elif units["source_target"]["source"] == "Meters":
             result = distance.convert_meters(values, units["source_target"]["target"])
         elif units["source_target"]["source"] == "Kilometers":
-            result = distance.convert_kilometers(values, units["source_target"]["target"])
+            result = distance.convert_kilometers(
+                values, units["source_target"]["target"]
+            )
         elif units["source_target"]["source"] == "Miles":
             result = distance.convert_miles(values, units["source_target"]["target"])
         elif units["source_target"]["source"] == "Inches":
@@ -170,11 +151,10 @@ def main():
 
         print("Answer: " + str(result) + " " + units["source_target"]["target"])
 
-
     except KeyboardInterrupt:
-        print('\nExiting program...')
+        print("\nExiting program...")
         sys.exit(0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
