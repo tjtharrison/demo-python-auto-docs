@@ -145,6 +145,78 @@ Converts miles to kilometers
 ----
 
 
+### convert_inches_to_meters
+```python
+.convert_inches_to_meters(
+   inches
+)
+```
+
+---
+Converts inches to meters
+
+
+**Args**
+
+* **inches** (float) : Distance in inches
+
+
+**Returns**
+
+* **float**  : Distance in meters
+
+
+----
+
+
+### convert_inches_to_kilometers
+```python
+.convert_inches_to_kilometers(
+   inches
+)
+```
+
+---
+Converts inches to kilometers
+
+
+**Args**
+
+* **inches** (float) : Distance in inches
+
+
+**Returns**
+
+* **float**  : Distance in kilometers
+
+
+----
+
+
+### convert_inches_to_miles
+```python
+.convert_inches_to_miles(
+   inches
+)
+```
+
+---
+Converts inches to miles
+
+
+**Args**
+
+* **inches** (float) : Distance in inches
+
+
+**Returns**
+
+* **float**  : Distance in miles
+
+
+----
+
+
 ### convert_meters
 ```python
 .convert_meters(
@@ -209,6 +281,31 @@ Converts miles to target unit
 **Args**
 
 * **miles** (float) : Distance in miles
+* **target** (str) : Target unit
+
+
+**Returns**
+
+* **float**  : Distance in target unit
+
+
+----
+
+
+### convert_inches
+```python
+.convert_inches(
+   inches, target
+)
+```
+
+---
+Converts inches to target unit
+
+
+**Args**
+
+* **inches** (float) : Distance in inches
 * **target** (str) : Target unit
 
 
