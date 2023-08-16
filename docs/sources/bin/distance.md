@@ -9,7 +9,7 @@
 ```
 
 ---
-Converts meters to kilometers
+Convert meters to kilometers.
 
 
 **Args**
@@ -33,7 +33,7 @@ Converts meters to kilometers
 ```
 
 ---
-Converts meters to miles
+Convert meters to miles.
 
 
 **Args**
@@ -57,7 +57,7 @@ Converts meters to miles
 ```
 
 ---
-Converts kilometers to meters
+Convert kilometers to meters.
 
 
 **Args**
@@ -81,7 +81,7 @@ Converts kilometers to meters
 ```
 
 ---
-Converts kilometers to miles
+Convert kilometers to miles.
 
 
 **Args**
@@ -105,7 +105,7 @@ Converts kilometers to miles
 ```
 
 ---
-Converts miles to meters
+Convert miles to meters.
 
 
 **Args**
@@ -129,7 +129,7 @@ Converts miles to meters
 ```
 
 ---
-Converts miles to kilometers
+Convert miles to kilometers.
 
 
 **Args**
@@ -153,7 +153,7 @@ Converts miles to kilometers
 ```
 
 ---
-Converts inches to meters
+Convert inches to meters.
 
 
 **Args**
@@ -177,7 +177,7 @@ Converts inches to meters
 ```
 
 ---
-Converts inches to kilometers
+Convert inches to kilometers.
 
 
 **Args**
@@ -201,7 +201,7 @@ Converts inches to kilometers
 ```
 
 ---
-Converts inches to miles
+Convert inches to miles.
 
 
 **Args**
@@ -225,7 +225,7 @@ Converts inches to miles
 ```
 
 ---
-Converts meters to target unit
+Convert meters to target unit.
 
 
 **Args**
@@ -250,7 +250,7 @@ Converts meters to target unit
 ```
 
 ---
-Converts kilometers to target unit
+Convert kilometers to target unit.
 
 
 **Args**
@@ -275,7 +275,7 @@ Converts kilometers to target unit
 ```
 
 ---
-Converts miles to target unit
+Convert miles to target unit.
 
 
 **Args**
@@ -300,7 +300,7 @@ Converts miles to target unit
 ```
 
 ---
-Converts inches to target unit
+Convert inches to target unit.
 
 
 **Args**

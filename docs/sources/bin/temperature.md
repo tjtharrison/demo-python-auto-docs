@@ -9,7 +9,7 @@
 ```
 
 ---
-Converts Celsius to Fahrenheit
+Convert Celsius to Fahrenheit.
 
 
 **Args**
@@ -33,7 +33,7 @@ Converts Celsius to Fahrenheit
 ```
 
 ---
-Converts Celsius to Kelvin
+Convert Celsius to Kelvin.
 
 
 **Args**
@@ -57,7 +57,7 @@ Converts Celsius to Kelvin
 ```
 
 ---
-Converts Fahrenheit to Celsius
+Convert Fahrenheit to Celsius.
 
 
 **Args**
@@ -81,7 +81,7 @@ Converts Fahrenheit to Celsius
 ```
 
 ---
-Converts Fahrenheit to Kelvin
+Convert Fahrenheit to Kelvin.
 
 
 **Args**
@@ -105,7 +105,7 @@ Converts Fahrenheit to Kelvin
 ```
 
 ---
-Converts Kelvin to Celsius
+Convert Kelvin to Celsius.
 
 
 **Args**
@@ -129,7 +129,7 @@ Converts Kelvin to Celsius
 ```
 
 ---
-Converts Kelvin to Fahrenheit
+Convert Kelvin to Fahrenheit.
 
 
 **Args**
@@ -145,15 +145,15 @@ Converts Kelvin to Fahrenheit
 ----
 
 
-### convert_celsus
+### convert_celsius
 ```python
-.convert_celsus(
+.convert_celsius(
    value, target
 )
 ```
 
 ---
-Converts Celsius to target unit
+Convert Celsius to target unit.
 
 
 **Args**
@@ -178,7 +178,7 @@ Converts Celsius to target unit
 ```
 
 ---
-Converts Fahrenheit to target unit
+Convert Fahrenheit to target unit.
 
 
 **Args**
@@ -203,7 +203,7 @@ Converts Fahrenheit to target unit
 ```
 
 ---
-Converts Kelvin to target unit
+Convert Kelvin to target unit.
 
 
 **Args**

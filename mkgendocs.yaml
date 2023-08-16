@@ -6,18 +6,6 @@ pages:
   page: main.md
   source: ./main.py
 - functions:
-  - convert_celsius_to_fahrenheit
-  - convert_celsius_to_kelvin
-  - convert_fahrenheit_to_celsius
-  - convert_fahrenheit_to_kelvin
-  - convert_kelvin_to_celsius
-  - convert_kelvin_to_fahrenheit
-  - convert_celsus
-  - convert_fahrenheit
-  - convert_kelvin
-  page: bin/temperature.md
-  source: ./bin/temperature.py
-- functions:
   - convert_grams_to_kilograms
   - convert_grams_to_pounds
   - convert_kilograms_to_grams
@@ -29,6 +17,18 @@ pages:
   - convert_kilograms
   page: bin/weight.md
   source: ./bin/weight.py
+- functions:
+  - convert_celsius_to_fahrenheit
+  - convert_celsius_to_kelvin
+  - convert_fahrenheit_to_celsius
+  - convert_fahrenheit_to_kelvin
+  - convert_kelvin_to_celsius
+  - convert_kelvin_to_fahrenheit
+  - convert_celsius
+  - convert_fahrenheit
+  - convert_kelvin
+  page: bin/temperature.md
+  source: ./bin/temperature.py
 - functions:
   - convert_meters_to_kilometers
   - convert_meters_to_miles

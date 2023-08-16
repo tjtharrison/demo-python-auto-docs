@@ -9,7 +9,7 @@
 ```
 
 ---
-Converts grams to kilograms
+Convert grams to kilograms.
 
 
 **Args**
@@ -33,7 +33,7 @@ Converts grams to kilograms
 ```
 
 ---
-Converts grams to pounds
+Convert grams to pounds.
 
 
 **Args**
@@ -57,7 +57,7 @@ Converts grams to pounds
 ```
 
 ---
-Converts kilograms to grams
+Convert kilograms to grams.
 
 
 **Args**
@@ -81,7 +81,7 @@ Converts kilograms to grams
 ```
 
 ---
-Converts kilograms to pounds
+Convert kilograms to pounds.
 
 
 **Args**
@@ -105,7 +105,7 @@ Converts kilograms to pounds
 ```
 
 ---
-Converts pounds to grams
+Convert pounds to grams.
 
 
 **Args**
@@ -129,7 +129,7 @@ Converts pounds to grams
 ```
 
 ---
-Converts pounds to kilograms
+Convert pounds to kilograms.
 
 
 **Args**
@@ -153,7 +153,7 @@ Converts pounds to kilograms
 ```
 
 ---
-Converts pounds to grams or kilograms
+Convert pounds to grams or kilograms.
 
 
 **Args**
@@ -178,7 +178,7 @@ Converts pounds to grams or kilograms
 ```
 
 ---
-Converts grams to kilograms or pounds
+Convert grams to kilograms or pounds.
 
 
 **Args**
@@ -203,7 +203,7 @@ Converts grams to kilograms or pounds
 ```
 
 ---
-Converts kilograms to grams or pounds
+Convert kilograms to grams or pounds.
 
 
 **Args**

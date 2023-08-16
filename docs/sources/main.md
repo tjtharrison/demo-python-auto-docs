@@ -51,4 +51,4 @@ Ask user for value to convert.
 ```
 
 ---
-Main function for the program.
+Launch the program.
